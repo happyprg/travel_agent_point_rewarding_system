@@ -1,0 +1,26 @@
+spring:
+  devtools:
+    livereload:
+      enabled: true
+    restart:
+      poll-interval: 2
+      quiet-period: 1
+  mustache:
+    cache: false
+  profiles:
+    active: alpha
+  output:
+    ansi:
+      enabled: always
+logging:
+  path: ./log
+  file: weblog.log
+---
+spring:
+  profiles: alpha
+---
+spring:
+  profiles: beta
+---
+spring:
+  profiles: release

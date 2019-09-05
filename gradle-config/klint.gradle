@@ -1,0 +1,10 @@
+subprojects {
+    kotlinter {
+        ignoreFailures = false
+        indentSize = 4
+        continuationIndentSize = 4
+        reporter = arrayOf("checkstyle", "plain")
+        experimentalRules = false
+        indentation = 7
+    }
+}
